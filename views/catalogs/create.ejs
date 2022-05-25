@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Catalogs | Create Page</title>
+  </head>
+  <body>
+    <form method="POST" action="/catalogs">
+      <label for="product_name">Name</label>
+      <br />
+      <input type="text" name="product_name" id="product_name" />
+      <br />
+
+      <label for="product_color">Color</label>
+      <br />
+      <input type="text" name="product_color" id="product_color" />
+      <br />
+
+      <label for="product_size">Size</label>
+      <br />
+      <input type="text" name="product_size" id="product_size" />
+      <br />
+
+      <label for="product_description">Description</label>
+      <br />
+      <textarea
+        name="product_description"
+        id="product_description"
+        cols="30"
+        rows="5"
+      ></textarea>
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Catalogs | All Product</title>
+  </head>
+  <body>
+    <a href="/catalogs/create">Create new Catalog</a>
+    <br />
+    <br />
+
+    <% catalogs.forEach(i => { %>
+    <div>
+      <h1><%= i.product_name %></h1>
+      <p><%= i.product_color %></p>
+      <p><%= i.product_size %></p>
+      <p><%= i.product_description %></p>
+      <a href="/catalogs/<%= i.id %>">Read more!!!</a>
+    </div>
+    <% }) %>
+  </body>
+</html>
